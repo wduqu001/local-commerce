@@ -1,3 +1,6 @@
+
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
@@ -14,8 +17,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  background-color: #fff;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +39,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.app-sider {
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.sider-settings-header {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 12px 0 0 12px;
+  color: #fff;
+}
+
+.app-content {
+  margin: 24px 16px 0;
+}
+
+.app-content > div {
+  padding: 24px;
+  background: #fff;
+  min-height: 78vh;
+}
+
+.logo {
+  margin: 36px auto;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  color: #fff;
+  background-image: url(./store-local.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
